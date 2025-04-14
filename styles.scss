@@ -14,6 +14,12 @@ $gray_text: #AAAAAA;
     flex-direction: row;
 }
 
+@mixin hover{
+    &:hover{
+        border: 1px solid $text_color;
+    }
+}
+
 //==========================================================================
 body{
     font-family: 'Roboto', sans-serif;
@@ -50,6 +56,9 @@ body{
             background-color: $base_color;
             color: $gray_text;
             font-size: 15px;
+            &:focus{
+                outline: none;
+            }
         }
     }
     &_icon_tia{
@@ -116,6 +125,7 @@ body{
     border: 1px solid $gray_color;
     border-radius: 20px;
     @include flex-center();
+    @include hover();
 }
 
 .icon_micro{
@@ -143,10 +153,16 @@ body{
     width: 111px;
     height: 36px;
     @include flex-center();
+    color: $text_color;
+    font-size: 15px;
     background-color: $gray_color;
     border: 1px solid $gray_color;
     border-radius: 40px;
+    
+    @include hover();
 }
+
+
 
 .notify{
     width: 40px;
@@ -178,6 +194,7 @@ body{
 .home{
     width: 70px;
     position: fixed;
+    background-color: $base_color;
     left: 0%;
     display: flex;
     flex-direction: column;
@@ -189,6 +206,12 @@ body{
 
         &_el{
             color: $text_color;
+            width: 24px;
+            height: 24px;
+        }
+
+        &_el:hover{
+            color: $gray_text;
             width: 24px;
             height: 24px;
         }
@@ -270,6 +293,14 @@ body{
         color: $text_color;
         border: 1px solid $gray_color;
         background-color: $gray_color;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    &_icon:hover{
+        color: $gray_color;
+        border: 1px solid $text_color;
+        background-color: $text_color;
         padding: 5px 10px;
         border-radius: 10px;
         font-size: 14px;
