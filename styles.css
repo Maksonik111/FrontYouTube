@@ -1,0 +1,260 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  margin: 0px 16px;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zapros, .zapros_icon_tia, .zapros_input_line, .zapros_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zapros_input_line {
+  width: 484px;
+  padding: 0px;
+  border: 0px;
+  height: 24px;
+  background-color: hsl(0, 0%, 7%);
+  color: #AAAAAA;
+  font-size: 15px;
+}
+.zapros_icon_tia {
+  width: 27px;
+  height: 27px;
+  padding: 0px 4px;
+}
+
+.section_search {
+  width: 64px;
+  height: 40px;
+  background-color: hsl(0, 0%, 18.82%);
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_search {
+  width: 24px;
+  height: 24px;
+}
+
+.search_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-radius: 40px;
+  padding: 0px 0px 0px 16px;
+  background-color: hsl(0, 0%, 7%);
+  height: 40px;
+}
+
+.block_youtube {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 169px;
+}
+
+.icon_list {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.icon_youtube {
+  fill: white;
+  height: 20px;
+  width: 93px;
+  padding: 18px;
+}
+
+.section_micro {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(0, 0%, 18.82%);
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_micro {
+  width: 25px;
+  height: 25px;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.section_creat {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  gap: 5px;
+}
+
+.creat {
+  width: 111px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 18.82%);
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-radius: 40px;
+}
+
+.notify {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notify_icon {
+  width: 27px;
+  height: 27px;
+}
+
+.my_icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.section_my_icon {
+  padding: 0px 40px 0px 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+  margin-top: 56px;
+}
+
+.home {
+  width: 70px;
+  position: fixed;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+}
+.home_line_el {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.video_card {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+  padding: 20px 0px;
+}
+
+.section_video {
+  width: 450px;
+  height: 400px;
+}
+
+.img {
+  width: 450px;
+  height: 281px;
+  border-radius: 10px;
+}
+
+.section_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px 0px 0px;
+}
+
+.video_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.descript {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.channel {
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+.video_views {
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+.video_menu {
+  fill: white;
+  height: 24px;
+  width: 24px;
+}
+
+.block {
+  position: fixed;
+  background-color: hsl(0, 0%, 7%);
+  height: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.block_icon {
+  color: white;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  background-color: hsl(0, 0%, 18.82%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */

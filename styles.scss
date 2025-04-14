@@ -1,0 +1,277 @@
+$base_color: hsl(0,0%,7%);
+$text_color: white;
+$gray_color: hsl(0, 0%, 18.82%);
+$gray_text: #AAAAAA;
+
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+//==========================================================================
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $base_color;
+    margin: 0px 16px;
+}
+//==========================================================================
+//header
+
+.header{
+    position: fixed;
+    top: 0%;
+    background-color: $base_color;
+    color: $text_color;
+    width: 100%;
+    height: 56px;
+    @include flex-row();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+//-------------------------------------------------------------
+.zapros{
+    @include flex-center();
+
+    &_input{
+        @extend .zapros;
+        &_line{
+            @extend .zapros;
+            width: 484px;
+            padding: 0px;
+            border: 0px;
+            height: 24px;
+            background-color: $base_color;
+            color: $gray_text;
+            font-size: 15px;
+        }
+    }
+    &_icon_tia{
+        @extend .zapros;
+        width: 27px;
+        height: 27px;
+        padding: 0px 4px;
+    }
+}
+
+.section_search{
+    width: 64px;
+    height: 40px;
+    background-color: $gray_color;
+    border: 1px solid $gray_color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    @include flex-center();
+}
+.icon_search{
+    width: 24px;
+    height: 24px;
+}
+
+
+.search_all{
+    @include flex-center();
+    @include flex-row();
+    border: 1px solid $gray_color;
+    border-radius: 40px;
+    padding: 0px 0px 0px 16px;
+    background-color: $base_color;
+    height: 40px;
+
+}
+
+//--------------------------------------------------------
+//Icon
+.block_youtube{
+    @include flex-row();
+    @include flex-center();
+    height: 56px;
+    width: 169px;
+    
+}
+.icon_list{
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    fill: $text_color;
+}
+.icon_youtube{
+    fill: $text_color;
+    height: 20px;
+    width: 93px;
+    padding: 18px;
+}
+//-----------------------------------------------
+//micro
+.section_micro{
+    width: 40px;
+    height: 40px;
+    background-color: $gray_color;
+    border: 1px solid $gray_color;
+    border-radius: 20px;
+    @include flex-center();
+}
+
+.icon_micro{
+    width: 25px;
+    height: 25px;
+}
+
+.order{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+//------------------------------------------------
+//creat
+.section_creat{
+    @include flex-row();
+    @include flex-center();
+    height: 56px;
+    gap: 5px;
+}
+
+.creat{
+    width: 111px;
+    height: 36px;
+    @include flex-center();
+    background-color: $gray_color;
+    border: 1px solid $gray_color;
+    border-radius: 40px;
+}
+
+.notify{
+    width: 40px;
+    height: 40px;
+    @include flex-center();
+}
+
+.notify_icon{
+    width: 27px;
+    height: 27px;
+}
+
+.my_icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+.section_my_icon{
+    padding: 0px 40px 0px 0px;
+}
+//====================================================
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-top: 56px;
+}
+
+.home{
+    width: 70px;
+    position: fixed;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_line{
+        @include flex-center();
+        padding: 16px 0px;
+
+        &_el{
+            color: $text_color;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+
+//-----------------------------------------------------
+//main video
+
+.video_card{
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: $text_color;
+    padding: 20px 0px;
+}
+
+.section_video{
+    width: 450px;
+    height: 400px;
+}
+.img{
+    width: 450px;
+    height: 281px;
+    border-radius: 10px;
+}
+
+.section_description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+
+}
+
+.video_description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descript{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.channel{
+    color: $gray_text;
+    font-size: 14px;
+}
+.video_views{
+    color: $gray_text;
+    font-size: 14px;
+}
+
+.video_menu{
+    fill: $text_color;
+    height: 24px;
+    width: 24px;   
+}
+
+//=======================================
+//block_icon
+
+.block{
+    position: fixed;
+    background-color: $base_color;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    &_icon{
+        color: $text_color;
+        border: 1px solid $gray_color;
+        background-color: $gray_color;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
