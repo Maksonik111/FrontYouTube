@@ -1,7 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: hsl(0, 0%, 7%);
-  margin: 0px 16px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .header {
@@ -16,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 0px 0px 16px;
 }
 
 .zapros, .zapros_icon_tia, .zapros_input_line, .zapros_input {
@@ -71,7 +77,7 @@ body {
   height: 40px;
 }
 
-.block_youtube {
+.youtube {
   display: flex;
   flex-direction: row;
   display: flex;
@@ -81,14 +87,14 @@ body {
   width: 169px;
 }
 
-.icon_list {
+.youtube__list {
   padding: 8px;
   width: 24px;
   height: 24px;
   fill: white;
 }
 
-.icon_youtube {
+.youtube__icon {
   fill: white;
   height: 20px;
   width: 93px;
@@ -172,12 +178,12 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-  margin-left: 90px;
+  margin-left: 120px;
   margin-top: 56px;
 }
 
 .home {
-  width: 70px;
+  width: 120px;
   position: fixed;
   background-color: hsl(0, 0%, 7%);
   left: 0%;
@@ -185,18 +191,16 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.home_line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 0px;
+.home__line {
+  width: 24px;
+  padding: 16px 24px;
 }
-.home_line_el {
+.home__line-el {
   color: white;
   width: 24px;
   height: 24px;
 }
-.home_line_el:hover {
+.home__line-el:hover {
   color: #AAAAAA;
   width: 24px;
   height: 24px;
@@ -211,18 +215,17 @@ body {
   padding: 20px 0px;
 }
 
-.section_video {
+.video {
   width: 450px;
   height: 400px;
 }
-
-.img {
+.video__img {
   width: 450px;
   height: 281px;
   border-radius: 10px;
 }
 
-.section_description {
+.description-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -267,7 +270,7 @@ body {
   align-items: center;
   gap: 20px;
 }
-.block_icon {
+.block__icon {
   color: white;
   border: 1px solid hsl(0, 0%, 18.82%);
   background-color: hsl(0, 0%, 18.82%);
@@ -275,7 +278,7 @@ body {
   border-radius: 10px;
   font-size: 14px;
 }
-.block_icon:hover {
+.block__icon:hover {
   color: hsl(0, 0%, 18.82%);
   border: 1px solid white;
   background-color: white;

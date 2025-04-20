@@ -4,6 +4,7 @@ $gray_color: hsl(0, 0%, 18.82%);
 $gray_text: #AAAAAA;
 
 
+
 @mixin flex-center{
     display: flex;
     justify-content: center;
@@ -24,8 +25,14 @@ $gray_text: #AAAAAA;
 body{
     font-family: 'Roboto', sans-serif;
     background-color: $base_color;
-    margin: 0px 16px;
+    margin: 0px;
 }
+//==========================================================================
+a{
+    text-decoration: none;
+    color: white;
+}
+
 //==========================================================================
 //header
 
@@ -40,6 +47,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 0px 0px 16px;
 }
 //-------------------------------------------------------------
 .zapros{
@@ -96,21 +104,21 @@ body{
 }
 
 //--------------------------------------------------------
-//Icon
-.block_youtube{
+//Icon youtube
+.youtube{
     @include flex-row();
     @include flex-center();
     height: 56px;
     width: 169px;
     
 }
-.icon_list{
+.youtube__list{
     padding: 8px;
     width: 24px;
     height: 24px;
     fill: $text_color;
 }
-.icon_youtube{
+.youtube__icon{
     fill: $text_color;
     height: 20px;
     width: 93px;
@@ -187,12 +195,12 @@ body{
 .main{
     display: flex;
     flex-direction: row;
-    margin-left: 90px;
+    margin-left: 120px;
     margin-top: 56px;
 }
 
 .home{
-    width: 70px;
+    width: 120px;
     position: fixed;
     background-color: $base_color;
     left: 0%;
@@ -200,17 +208,17 @@ body{
     flex-direction: column;
     gap: 20px;
 
-    &_line{
-        @include flex-center();
-        padding: 16px 0px;
+    &__line{
+        width: 24px;
+        padding: 16px 24px;
 
-        &_el{
+        &-el{
             color: $text_color;
             width: 24px;
             height: 24px;
         }
 
-        &_el:hover{
+        &-el:hover{
             color: $gray_text;
             width: 24px;
             height: 24px;
@@ -231,22 +239,24 @@ body{
     padding: 20px 0px;
 }
 
-.section_video{
+.video{
     width: 450px;
     height: 400px;
-}
-.img{
-    width: 450px;
-    height: 281px;
-    border-radius: 10px;
+
+    &__img{
+        width: 450px;
+        height: 281px;
+        border-radius: 10px;
+    }
 }
 
-.section_description{
+
+.description-section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0px 0px 0px;
-
+    
 }
 
 .video_description{
@@ -289,7 +299,7 @@ body{
     align-items: center;
     gap: 20px;
 
-    &_icon{
+    &__icon{
         color: $text_color;
         border: 1px solid $gray_color;
         background-color: $gray_color;
@@ -297,7 +307,7 @@ body{
         border-radius: 10px;
         font-size: 14px;
     }
-    &_icon:hover{
+    &__icon:hover{
         color: $gray_color;
         border: 1px solid $text_color;
         background-color: $text_color;
